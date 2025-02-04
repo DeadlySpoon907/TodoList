@@ -1,29 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
 function App(){
   <div> 
-  <ToDoList taskOne= "Learn React" taskTwo= "Build a To-Do List" taskThree= "Master JavaScript" taskFour="Apply For Jobs" /> 
+  <Tasks taskOne= "Learn React" taskTwo= "Build a To-Do List" taskThree= "Master JavaScript" taskFour="Apply For Jobs" /> 
   </div>
-    return(
-      function ToDoList(props){
-        <p>
+      function Tasks(props){
+        return(
+          <>
           <div class="task">
-            <input type="checkbox" class="status"></input> {props.taskOne}
+            <input type="checkbox" class="status"></input> <p>{props.taskOne}</p>
           </div>
           <div class="task">
-            <input type="checkbox" class="status"></input> {props.taskTwo}
+            <input type="checkbox" class="status"></input> <p>{props.taskTwo}</p>
           </div>
           <div class="task">
-            <input type="checkbox" class="status"></input> {props.taskThree}
+            <input type="checkbox" class="status"></input> <p>{props.taskThree}</p>
           </div>
           <div class="task">
-            <input type="checkbox" class="status"></input> {props.taskFour}
+            <input type="checkbox" class="status"></input> <p>{props.taskFour}</p>
           </div>
-        </p>
-      }
-    );  
+          </>
+        );
+      }  
 }
+
 export default App
